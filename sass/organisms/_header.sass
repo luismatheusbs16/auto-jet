@@ -1,6 +1,6 @@
 header 
-   
-	min-height: 540px
+    +clearfix
+	min-height: 475px
 	position: relative
 
 	&:after
@@ -13,10 +13,10 @@ header
 		+gradient(90deg, $vermelho, $vermelho-claro)
 	
 	background:
-		image: url('../images/slide-pag-inicial.jpg')
+		image: url('../images/banner-pag-inicial.jpg')
 		position: top center
 		repeat: no-repeat
-		//attachment
+		//attachment: fixed
 		size: cover
 
 	.logo
@@ -47,6 +47,13 @@ header
 					a
 						color: $branco
 						text-transform: uppercase
+	h1
+	  clear: both
+	  margin: 110px auto 7px auto !important
+	  font-weight: $light
+	  border: 1px solid $branco 
+	  padding: 20px
+	  display: table
 					
 
 	h1,
