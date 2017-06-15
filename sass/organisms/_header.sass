@@ -9,7 +9,11 @@ header
 		bottom: 0 
 		width: 100%
 		height: 15px
-		+gradient(90deg, $vermelho, $vermelho-claro)
+		background: #66100e /* Old browsers */
+		background: -moz-linear-gradient(left, #66100e 0%, #e23e42 51%, #66100e 99%) /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, #66100e 0%,#e23e42 51%,#66100e 99%) /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, #66100e 0%,#e23e42 51%,#66100e 99%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66100e', endColorstr='#66100e',GradientType=1 ) /* IE6-9 */
 
 
 	.logo
@@ -48,6 +52,9 @@ header
 	  border: 1px solid $branco 
 	  padding: 20px
 	  display: table
+	  +breakpoint($celular)
+	  		+font-size(40px)
+
 					
 
 	h1,
