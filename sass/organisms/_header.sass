@@ -2,6 +2,7 @@ header
 	min-height: 524px
 	position: relative
 
+
 	&:after
 		content: ""
 		display: block
@@ -14,7 +15,6 @@ header
 		background: -webkit-linear-gradient(left, #66100e 0%,#e23e42 51%,#66100e 99%) /* Chrome10-25,Safari5.1-6 */
 		background: linear-gradient(to right, #66100e 0%,#e23e42 51%,#66100e 99%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66100e', endColorstr='#66100e',GradientType=1 ) /* IE6-9 */
-
 
 	.logo
 		float: left
@@ -32,11 +32,12 @@ header
 		float: right 
 		margin: 35px 0 0
 		
+		
 		nav
 			+breakpoint($tablet)
 					display: none
 			+breakpoint($celular)
-					display: none
+					display: none	
 			ul
 				li
 					display: inline-block
@@ -54,11 +55,15 @@ header
 	  display: table
 	  +breakpoint($celular)
 	  		+font-size(40px)
-
-					
+	
+		
 
 	h1,
 	p
 		color: $branco
 		text-align: center
-		text-transform: uppercase		
+		text-transform: uppercase	
+
+    
+			
+			
