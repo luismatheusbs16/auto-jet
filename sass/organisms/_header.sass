@@ -1,8 +1,9 @@
 header
-	min-height: 524px
 	position: relative
 
-
+	
+  
+  
 	&:after
 		content: ""
 		display: block
@@ -25,15 +26,20 @@ header
 
 	.logo,
 	.links
-		margin: 30px 0 0
+		position: absolute
+		margin: 30px 0 0 !important
+		z-index: 20
+	
 
 
 	.links
 		float: right 
 		margin: 35px 0 0
+		padding-left: 800px 
 		
 		
 		nav
+
 			+breakpoint($tablet)
 					display: none
 			+breakpoint($celular)
@@ -48,7 +54,7 @@ header
 						text-transform: uppercase
 	h1
 	  clear: both
-	  margin: 127px auto 10px auto !important
+	  margin: 120px auto 10px auto !important
 	  font-weight: $light
 	  border: 1px solid $branco 
 	  padding: 20px
