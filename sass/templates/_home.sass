@@ -7,7 +7,16 @@
         
 .vantagens
       
-            
+        h1
+            +make-sm-column(8)
+            +make-sm-column-offset(2)
+            text-align: center 
+            text-transform: uppercase
+            margin-bottom: 50px
+            +breakpoint($celular)
+                +font-size(35px)
+
+
         ul 
             +clearfix
             +make-row
@@ -15,6 +24,24 @@
             li 
                 +make-sm-column(3)
                 +make-xs-column(6)
+                +breakpoint($celular)
+                    +font-size(7px)
+                    margin-bottom: 25px
+               
+                h2
+                        border: 2px solid $branco
+                        width: 80px
+                        height: 80px
+                        line-height: 5px
+                        +border-radius(100px)
+                        text-align: center
+                        padding: 10px
+                        display: inline-block
+
+					
+	  		                       
+	  		                       
+                    
 
                 figure 
                     position: relative
@@ -25,27 +52,32 @@
                         a
         
                             text-align: center
-                            text-transform: uppercase
                             position: absolute
                             z-index: 5
                             color: $branco
                             width: 100%
                             top: 10%
                             h2
-                                +font-size(60px)
-                                margin: 5px
+                                +font-size(80px)
+                                text-transform: uppercase
+                   
                             h3
                                 +font-size(40px)
                                 margin: 0
+                                +breakpoint($celular)
+                                    +font-size(30px)
+                                    
                           
                         p
                             +font-size(20px)
                             padding: 5px
+                            +breakpoint($celular)
+                                    display: none  
+                               
 
-                        a,
-                        .overlay
-                            +transition(.4s)
 
+                            
+                            
                         .overlay
                             +gradient(180deg, $vermelho-claro, $vermelho)
                             position: absolute
@@ -57,5 +89,79 @@
                             height: 100%
                             
 
+body
+
+ 
+        .menu 
+            color: #ffffff
+            margin: 0 auto
+            background: #cc2a2a /* Old browsers */
+            background: -moz-linear-gradient(top, #cc2a2a 0%, #7c1d1f 100%, #7c1d1f 100%) /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #cc2a2a 0%,#7c1d1f 100%,#7c1d1f 100%) /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #cc2a2a 0%,#7c1d1f 100%,#7c1d1f 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc2a2a', endColorstr='#7c1d1f',GradientType=0 ) /* IE6-9 */
+
+
+        .menu
+
+             a
+               
+                color: #ffffff
+                font-size: 15px
+  
+        .menu 
+            ul 
+                
+                li
+                    width: 100%
+                    text-align: center
+                    float: none
+                    padding: 10px
+                    
     
+
+
+        #bt-menu
+            display: none
+            
+
+
+        label
+            display: none
+            +breakpoint($celular)           
+                display: block
+                padding: 6px
+                background-color: #000000
+                color: #ffffff
+                text-align: center
+                width: 100%      
+                font-size: 20px
+                cursor: pointer
+                height: 50px
+
+            +breakpoint($tablet)
+                display: block
+                padding: 6px
+                background-color: #000000
+                color: #ffffff
+                text-align: center
+                width: 100%
+                font-size: 20px
+                cursor: pointer
+                height: 40px
+              
+      
+        #bt-menu:checked ~ .menu
+            +breakpoint($celular)
+                display: block
+                
+            +breakpoint($tablet)
+                display: block
+       
+
+        .menu
+            display: none
+            
+
+	
 						

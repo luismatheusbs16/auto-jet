@@ -4,11 +4,23 @@
         <meta charset="UTF-8">
         <title>Auto Jet - Serviços Automotivos</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/contato.css">
         <link rel="stylesheet" href="css/sobre.css">
         <link rel="stylesheet" href="css/geral.css">
         <link rel="stylesheet" href="css/plugins.css">
     </head>
+  
     <body>
+          <input type="checkbox" id="bt-menu">
+                <label for="bt-menu"> MENU <i class="fa fa-bars" aria-hidden="true"></i></label>
+                 <nav class="menu">
+                    <ul>
+                        <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> INICIO</a></li>
+                        <li><a href="sobre.html"><i class="fa fa-group" aria-hidden="true"></i> SOBRE</a></li>
+                        <li><a href="servicos.html"><i class="fa fa-wrench" aria-hidden="true"></i> SERVIÇOS</a></li>
+                        <li><a href="contato.html"><i class="fa fa-commenting" aria-hidden="true"></i> CONTATO</a></li>
+                    </ul>	  
+                </nav>
         <header>
         <div class="container">
                 <div class="logo">
@@ -27,9 +39,9 @@
                 </nav>
             </div>
           </div>
-          <h1><strong>Quem </strong> Somos</h1>
+          <h1><strong>Contato </strong></h1>
 
-					<p>Conheça um pouco sobre nós:</p>
+					<p>Entre em contato conosco</p>
         </div>
         </header>
 
@@ -37,8 +49,43 @@
               <section class="contato">    
                     <div class="container">
                         <form>
+                            <div class="cols">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Nome" required>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="number" placeholder="Telefone">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <select>
+                                            <option>Selecione uma opção</option>
+                                            <option>Orçamento</option>
+                                            <option>Duvidas Referente ao Serviço</option>
+                                            <option>Outro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-area">
+                                <textarea placeholder="Escreva sua mensagem"></textarea>
+                            </div>
+                         
+                            <div class"form-group">
+                                <button class="botao medio"><i class="fa fa-envelope" aria-hidden="true"></i> Enviar</button>
+                            <div>
+                          
                             
-                        <form>
+                        </form>
                     </div>
               </section>
          </main>
@@ -47,7 +94,7 @@
                  <a href="index.html">
                     <img src="images/logo-rodape.svg" alt="logo-rodape">
                  <a/>
-            <p> Todos os Direiros Reservados Auto Jet Serviços Automotivos ® - 2017 </p>
+            <p> Todos os Direiros Reservados <strong>Auto Jet Serviços Automotivos ®<strong> - 2017 </p>
             </div>
         </footer>
     </body>

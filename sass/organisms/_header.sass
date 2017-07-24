@@ -1,9 +1,8 @@
 header
 	position: relative
 
-	
-  
-  
+
+
 	&:after
 		content: ""
 		display: block
@@ -20,6 +19,10 @@ header
 	.logo
 		float: left
         margin: 30px 0 0
+		+breakpoint($celular)
+			display: none
+		+breakpoint($tablet)
+			display: none
 		img
 			width: 118px
 			height: 59px
@@ -30,7 +33,7 @@ header
 		margin: 30px 0 0 !important
 		z-index: 20
 	
-
+	
 
 	.links
 		float: right 

@@ -10,9 +10,80 @@ header
         
 @import organisms/sobre 
 header
+        
         min-height: 348px
         margin: 0 0 15px
         background: 
             image: url('../images/slide-quem-somos-2.jpg')
             position: top center
             repeat: no-repeat
+        
+        
+
+body
+
+        .menu 
+            color: #ffffff
+            background: #cc2a2a /* Old browsers */
+            background: -moz-linear-gradient(top, #cc2a2a 0%, #7c1d1f 100%, #7c1d1f 100%) /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #cc2a2a 0%,#7c1d1f 100%,#7c1d1f 100%) /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #cc2a2a 0%,#7c1d1f 100%,#7c1d1f 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc2a2a', endColorstr='#7c1d1f',GradientType=0 ) /* IE6-9 */
+
+
+        .menu
+
+             a
+                color: #ffffff
+                font-size: 15px
+  
+        .menu 
+
+            ul 
+                li
+                    width: 100%
+                    text-align: center
+                    float: none
+                    padding: 10px
+    
+
+
+        #bt-menu
+            display: none
+
+        label
+            display: none
+           
+            +breakpoint($celular)  
+                background-color: #000000
+                color: #ffffff
+                display: block
+                padding: 6px
+                text-align: center
+                width: 100%      
+                font-size: 20px
+                cursor: pointer
+                height: 50px
+
+            +breakpoint($tablet)
+                display: block
+                padding: 6px
+                background-color: #000000
+                color: #ffffff
+                text-align: center
+                width: 100%
+                font-size: 20px
+                cursor: pointer
+                height: 40px
+              
+      
+        #bt-menu:checked ~ .menu
+            +breakpoint($celular)
+                display: block
+                
+            +breakpoint($tablet)
+                display: block
+       
+
+        .menu
+            display: none

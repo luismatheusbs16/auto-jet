@@ -1,0 +1,104 @@
+.contato
+
+        form
+            +clearfix
+            +make-sm-column(8)
+            +make-sm-column-offset(2)
+            margin-bottom: 120px
+            
+            .cols
+                +make-row
+            .col
+                +make-sm-column(6)
+
+            input,
+            select, 
+            textarea 
+                width: 100%
+                border: 2px solid $preto 
+                padding: 7px   
+                +transition(0.5s)
+                &:hover
+                    border-color: $vermelho-claro
+                &:focus
+                    border-color: $vermelho-claro
+            
+            select 
+                height: 37px
+
+               
+            button
+                background-color: $vermelho-claro
+                color: $branco
+                display: table
+                border-color: $vermelho-claro
+                margin: 0 auto
+                width: 100%
+
+body
+        .menu 
+            color: #ffffff
+            background: #cc2a2a /* Old browsers */
+            background: -moz-linear-gradient(top, #cc2a2a 0%, #7c1d1f 100%, #7c1d1f 100%) /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #cc2a2a 0%,#7c1d1f 100%,#7c1d1f 100%) /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #cc2a2a 0%,#7c1d1f 100%,#7c1d1f 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc2a2a', endColorstr='#7c1d1f',GradientType=0 ) /* IE6-9 */
+
+
+        .menu
+
+             a
+                color: #ffffff
+                font-size: 15px
+  
+        .menu 
+
+            ul 
+                li
+                    width: 100%
+                    text-align: center
+                    float: none
+                    padding: 10px
+    
+
+
+        #bt-menu
+            display: none
+
+        label
+            display: none
+           
+            +breakpoint($celular)  
+                background-color: #000000
+                color: #ffffff
+                display: block
+                padding: 6px
+                text-align: center
+                width: 100%      
+                font-size: 20px
+                cursor: pointer
+                height: 50px
+
+            +breakpoint($tablet)
+                display: block
+                padding: 6px
+                background-color: #000000
+                color: #ffffff
+                text-align: center
+                width: 100%
+                font-size: 20px
+                cursor: pointer
+                height: 40px
+              
+      
+        #bt-menu:checked ~ .menu
+            +breakpoint($celular)
+                display: block
+                
+            +breakpoint($tablet)
+                display: block
+       
+
+        .menu
+            display: none
+	
