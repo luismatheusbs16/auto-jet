@@ -5,6 +5,9 @@
             +make-sm-column(8)
             +make-sm-column-offset(2)
             margin-bottom: 120px
+            h2
+                +breakpoint($celular)
+                    +font-size(25px)
             
             .cols
                 +make-row
@@ -34,6 +37,8 @@
                 border-color: $vermelho-claro
                 margin: 0 auto
                 width: 100%
+
+            
 
 body
         .menu 
