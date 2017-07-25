@@ -50,26 +50,26 @@
          <main>
               <section class="contato">    
                     <div class="container">
-                        <form>
+                        <form action="email.php" method="post">
                             <div class="cols">
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" placeholder="Nome" required>
+                                        <input name="nome" type="text" placeholder="Nome" required>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="email" placeholder="Email" required>
+                                        <input name="email" type="email" placeholder="Email" required>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="number" placeholder="Telefone">
+                                        <input name="telefone" type="number" placeholder="Telefone">
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-group">
-                                        <select>
+                                        <select name="opcao">
                                             <option>Selecione uma opção</option>
                                             <option>Orçamento</option>
                                             <option>Duvidas Referente ao Serviço</option>
@@ -79,7 +79,7 @@
                                 </div>
                             </div>
                             <div class="text-area">
-                                <textarea placeholder="Escreva sua mensagem"></textarea>
+                                <textarea name="mensagem" placeholder="Escreva sua mensagem"></textarea>
                             </div>
                          
                             <div class"form-group">
