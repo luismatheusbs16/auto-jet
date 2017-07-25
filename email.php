@@ -32,6 +32,8 @@ $mail->IsHTML(true);
 $mail->Subject = $assunto
 $mail->Body = $mensagem;
 
+$enviado = $mail->Send();
+
 if ($enviado) {
     echo "Email Enviado com Sucesso";
 }   else { 
