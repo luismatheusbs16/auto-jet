@@ -19,7 +19,7 @@ $mail->Host = "smtp.gmail.com";
 $mail->SMTPAuth = true;
 
 $mail->Username = 'luismatheusbs@gmail.com';
-$mail->Password = 'choppy2015'
+$mail->Password = 'choppy2015';
 
 $mail->From = $email;
 $mail->FromName = $nome;
